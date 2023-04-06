@@ -497,7 +497,6 @@
             this.txtDis.ReadOnly = true;
             this.txtDis.Size = new System.Drawing.Size(350, 30);
             this.txtDis.TabIndex = 6;
-            this.txtDis.Text = "0";
             this.txtDis.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btnInfo

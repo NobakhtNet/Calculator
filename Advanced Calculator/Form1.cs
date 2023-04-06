@@ -12,7 +12,7 @@ namespace Advanced_Calculator
 {
     public partial class Form1 : Form
     {
-        decimal fstNum, secNum = 0.0m;
+        decimal fstNum, secNum, reslt = 0.0m;
         string result;
         string operation = "";
 
@@ -33,6 +33,11 @@ namespace Advanced_Calculator
         {
             if (txtBox.Text == result)
                 txtBox.Text = "0";
+
+            btnPlus.Enabled = true;
+            btnMinus.Enabled = true;
+            btnMultiply.Enabled = true;
+            btnDivide.Enabled = true;
 
             Button button = (Button)sender;
             if (txtBox.Text == "0")
@@ -57,13 +62,20 @@ namespace Advanced_Calculator
             {
                 try
                 {
+                    fstNum = decimal.Parse(txtBox.Text);
                     btnEquals.PerformClick();
+
                     Button button = (Button)sender;
                     operation = button.Text;
-                    fstNum = decimal.Parse(txtBox.Text);
                     txtBox.Text = "0";
 
                     txtDis.Text = fstNum.ToString() + " " + operation;
+                    reslt = 1;
+
+                    btnPlus.Enabled = false;
+                    btnMinus.Enabled = false;
+                    btnMultiply.Enabled = false;
+                    btnDivide.Enabled = false;
                 }
                 catch (System.OverflowException)
                 {
@@ -101,7 +113,7 @@ namespace Advanced_Calculator
                         break;
 
                     default:
-                        txtDis.Text = $"{txtBox.Text}";
+                        txtDis.Text = $"{txtBox.Text} =";
                         break;
                 }
             }
@@ -125,9 +137,9 @@ namespace Advanced_Calculator
         {
             txtBox.Text = "0";
             txtDis.Text = "";
-            result = "0";
             fstNum = 0;
             secNum = 0;
+            
         }
 
         private void BtnCE_Click(object sender, EventArgs e)

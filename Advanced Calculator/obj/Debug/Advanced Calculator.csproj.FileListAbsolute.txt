@@ -1,0 +1,12 @@
+D:\C#\Advanced Calculator\bin\Debug\Advanced Calculator.exe.config
+D:\C#\Advanced Calculator\bin\Debug\Advanced Calculator.exe
+D:\C#\Advanced Calculator\bin\Debug\Advanced Calculator.pdb
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.csproj.AssemblyReference.cache
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.csproj.SuggestedBindingRedirects.cache
+D:\C#\Advanced Calculator\obj\Debug\Advanced_Calculator.Form1.resources
+D:\C#\Advanced Calculator\obj\Debug\Advanced_Calculator.Properties.Resources.resources
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.csproj.GenerateResource.cache
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.csproj.CoreCompileInputs.cache
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.exe
+D:\C#\Advanced Calculator\obj\Debug\Advanced Calculator.pdb
+D:\C#\Advanced Calculator\obj\Debug\Advanced_Calculator.Info.resources

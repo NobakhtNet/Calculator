@@ -57,6 +57,7 @@ namespace Advanced_Calculator
             {
                 try
                 {
+                    btnEquals.PerformClick();
                     Button button = (Button)sender;
                     operation = button.Text;
                     fstNum = decimal.Parse(txtBox.Text);

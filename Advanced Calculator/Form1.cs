@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,15 @@ namespace Advanced_Calculator
 {
     public partial class Form1 : Form
     {
+        [DllImport("dwmapi", PreserveSig = false)]
+        static extern void DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, in bool pvAttribute, int cbAttribute);
+
+        protected override void OnHandleCreated(EventArgs e)
+        {
+            const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
+            DwmSetWindowAttribute(Handle, DWMWA_USE_IMMERSIVE_DARK_MODE, true, Marshal.SizeOf<bool>());
+        }
+
         decimal fstNum, secNum = 0.0m;
         string result;
         string operation = "";

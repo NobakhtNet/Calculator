@@ -1,5 +1,4 @@
 # Calculator
 Advanced calculator made in c# windows forms application
  
- 
-![image](https://user-images.githubusercontent.com/96955087/230487528-0fa298dc-3d8f-40d9-9695-211f88f70cca.png)
+ ![Screenshot (19)](https://user-images.githubusercontent.com/96955087/230681625-261073a7-9bf4-4ddc-ab40-db5802e4d696.png)

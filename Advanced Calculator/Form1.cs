@@ -63,9 +63,9 @@ namespace Advanced_Calculator
                 try
                 {
                     btnEquals.PerformClick();
-                    fstNum = decimal.Parse(txtBox.Text);
 
                     Button button = (Button)sender;
+                    fstNum = decimal.Parse(txtBox.Text);
                     operation = button.Text;
                     txtBox.Text = "0";
 
@@ -132,19 +132,10 @@ namespace Advanced_Calculator
         {
             if (txtBox.Text.Length > 0)
             {
-                txtBox.Text = txtBox.Text.Remove(txtBox.Text.Length -1 , 1);
+                txtBox.Text = txtBox.Text.Remove(txtBox.Text.Length - 1, 1);
             }
             if (txtBox.Text == "")
                 txtBox.Text = txtBox.Text = "0";
-        }
-
-        private void BtnC_Click(object sender, EventArgs e)
-        {
-            txtBox.Text = "0";
-            txtDis.Text = "";
-            fstNum = 0;
-            secNum = 0;
-            
         }
 
         private void BtnCE_Click(object sender, EventArgs e)
@@ -190,6 +181,20 @@ namespace Advanced_Calculator
                 Location = form_pt
             };
             info.Show();
+
+        }
+
+        private void BtnC_Click(object sender, EventArgs e)
+        {
+            Point form_pt = new Point(this.Left, this.Top);
+            Form1 frm = new Form1
+            {
+                StartPosition = FormStartPosition.Manual,
+                Location = form_pt
+            };
+            frm.Show();
+            this.Hide();
+            frm.Closed += (s, args) => this.Close();
 
         }
 

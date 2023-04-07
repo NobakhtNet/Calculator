@@ -38,13 +38,14 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // pic
             // 
             this.pic.Image = ((System.Drawing.Image)(resources.GetObject("pic.Image")));
-            this.pic.Location = new System.Drawing.Point(2, 4);
+            this.pic.Location = new System.Drawing.Point(-1, 5);
             this.pic.Margin = new System.Windows.Forms.Padding(0);
             this.pic.Name = "pic";
             this.pic.Size = new System.Drawing.Size(41, 40);
@@ -76,7 +77,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Imprint MT Shadow", 2.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(-6, 59);
+            this.label1.Location = new System.Drawing.Point(-6, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(380, 56);
             this.label1.TabIndex = 5;
@@ -87,7 +88,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(3, 146);
+            this.label2.Location = new System.Drawing.Point(3, 136);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(366, 20);
             this.label2.TabIndex = 6;
@@ -98,24 +99,24 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label3.Location = new System.Drawing.Point(63, 183);
+            this.label3.Location = new System.Drawing.Point(31, 173);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(256, 20);
+            this.label3.Size = new System.Drawing.Size(310, 20);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Made And Adjusted By Alireza.N";
+            this.label3.Text = "Made And Adjusted By Alireza Nobakht";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLabel1.Location = new System.Drawing.Point(125, 227);
+            this.linkLabel1.Location = new System.Drawing.Point(126, 249);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(205, 18);
+            this.linkLabel1.Size = new System.Drawing.Size(194, 18);
             this.linkLabel1.TabIndex = 9;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Tag = "";
-            this.linkLabel1.Text = "https://youtu.be/6x0bUWt26z0";
+            this.linkLabel1.Text = "https://github.com/NeutronO";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel1_LinkClicked);
             // 
             // linkLabel2
@@ -123,7 +124,7 @@
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel2.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.linkLabel2.Location = new System.Drawing.Point(123, 267);
+            this.linkLabel2.Location = new System.Drawing.Point(118, 289);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(220, 18);
             this.linkLabel2.TabIndex = 10;
@@ -136,22 +137,33 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label5.Location = new System.Drawing.Point(48, 227);
+            this.label5.Location = new System.Drawing.Point(49, 249);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 20);
+            this.label5.Size = new System.Drawing.Size(70, 20);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Credits :";
+            this.label5.Text = "Github :";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Gadugi", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label6.Location = new System.Drawing.Point(42, 265);
+            this.label6.Location = new System.Drawing.Point(37, 287);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(75, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Discord :";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(35, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 31);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Info";
             // 
             // Info
             // 
@@ -159,6 +171,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(370, 573);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.linkLabel2);
@@ -190,5 +203,6 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
     }
 }

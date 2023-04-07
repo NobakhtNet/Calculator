@@ -12,7 +12,7 @@ namespace Advanced_Calculator
 {
     public partial class Form1 : Form
     {
-        decimal fstNum, secNum, reslt = 0.0m;
+        decimal fstNum, secNum = 0.0m;
         string result;
         string operation = "";
 
@@ -62,15 +62,14 @@ namespace Advanced_Calculator
             {
                 try
                 {
-                    fstNum = decimal.Parse(txtBox.Text);
                     btnEquals.PerformClick();
+                    fstNum = decimal.Parse(txtBox.Text);
 
                     Button button = (Button)sender;
                     operation = button.Text;
                     txtBox.Text = "0";
 
                     txtDis.Text = fstNum.ToString() + " " + operation;
-                    reslt = 1;
 
                     btnPlus.Enabled = false;
                     btnMinus.Enabled = false;
@@ -88,6 +87,12 @@ namespace Advanced_Calculator
         {
             secNum = decimal.Parse(txtBox.Text);
             txtDis.Text = $"{txtDis.Text} {txtBox.Text} =";
+
+            btnPlus.Enabled = true;
+            btnMinus.Enabled = true;
+            btnMultiply.Enabled = true;
+            btnDivide.Enabled = true;
+
             try
             {
                 switch (operation)
@@ -127,7 +132,7 @@ namespace Advanced_Calculator
         {
             if (txtBox.Text.Length > 0)
             {
-                txtBox.Text = txtBox.Text.Remove(txtBox.Text.Length - 1, 1);
+                txtBox.Text = txtBox.Text.Remove(txtBox.Text.Length -1 , 1);
             }
             if (txtBox.Text == "")
                 txtBox.Text = txtBox.Text = "0";

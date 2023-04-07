@@ -24,7 +24,7 @@ namespace Advanced_Calculator
 
         private void LinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("https://youtu.be/6x0bUWt26z0");
+            System.Diagnostics.Process.Start("https://github.com/NeutronO");
         }
 
         private void LinkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

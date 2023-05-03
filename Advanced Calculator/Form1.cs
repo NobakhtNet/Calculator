@@ -13,6 +13,10 @@ namespace Advanced_Calculator
 {
     public partial class Form1 : Form
     {
+        decimal fstNum, secNum = 0.0m;
+        string result;
+        string operation = "";
+
         [DllImport("dwmapi", PreserveSig = false)]
         static extern void DwmSetWindowAttribute(IntPtr hwnd, int dwAttribute, in bool pvAttribute, int cbAttribute);
 
@@ -21,10 +25,6 @@ namespace Advanced_Calculator
             const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
             DwmSetWindowAttribute(Handle, DWMWA_USE_IMMERSIVE_DARK_MODE, true, Marshal.SizeOf<bool>());
         }
-
-        decimal fstNum, secNum = 0.0m;
-        string result;
-        string operation = "";
 
         public Form1()
         {
